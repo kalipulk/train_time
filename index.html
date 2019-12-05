@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Train Times</title>
-        <link rel="stylesheet" type="text/css" href="train_style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="train.js"></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Times</title>
+    <link rel="stylesheet" type="text/css" href="train_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script type="text/javascript" src="train.js"></script>
+</head>
+
 <body>
-    
+    <!-- title & info -->
+    <div>
+    </div>
+
+    <!-- train schedule table -->
+    <div>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency(mins)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Train 1</td>
+                    <td>New York</td>
+                    <td>55</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Train 2</td>
+                    <td>Philadelphia</td>
+                    <td>200</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br><br>
+    <!-- add a new train to schedule -->
+    <!-- The above form looks like this -->
+    <form>
+        <div class="row">
+            <div class="six columns">
+                <label for="trainInput">Train Name</label>
+                <input class="u-full-width" type="text" placeholder="polar express" id="trainInput">
+            </div>
+            <div class="six columns">
+                <label for="trainInput">Destination</label>
+                <input class="u-full-width" type="text" placeholder="new york" id="trainInput">
+            </div>
+            <div class="six columns">
+                <label for="trainInput">First Train Time (military)</label>
+                <input class="u-full-width" type="text" placeholder="21:00" id="trainInput">
+            </div>
+            <div class="six columns">
+                <label for="trainInput">Frequency (mins)</label>
+                <input class="u-full-width" type="text" placeholder="" id="trainInput">
+            </div>
+            <input class="button-primary" type="submit" value="Submit">
+    </form>
 </body>
+
 </html>
