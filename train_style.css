@@ -7,11 +7,14 @@ body {
 
 #title {
     background-color: #75B1A9;
+    color: #fff;
+    border-radius: 5px;
+    border: solid 2px #D9B44A;
     font-size: 46px;
     text-align: center;
     font-family: 'Monoton', cursive;
     width: auto;
-    margin: 20px;
+    margin: 10px;
     padding: 15px;
 }
 
@@ -35,7 +38,8 @@ body {
 
 #submit {
     background-color: #ACD0C0;
-    border: #fff;
+    border: solid 2px #4F6457;
+
 }
 
 #submit:hover {
