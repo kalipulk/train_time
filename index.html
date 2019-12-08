@@ -8,6 +8,7 @@
     <title>Train Times</title>
     <link rel="stylesheet" type="text/css" href="../../../Skeleton-2.0.4/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../Skeleton-2.0.4/css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="train_style.css">
     <link rel="stylesheet" type="text/css" href="train_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,51 +22,41 @@
 
 <body>
     <!-- title & info -->
-    <div>
+    <div id="title">
         train time schedule
     </div>
 
     <!-- train schedule table -->
-    <div>
+    <div id="schedule">
         <table class="u-full-width">
             <thead>
                 <tr>
                     <th>Train Name</th>
                     <th>Destination</th>
-                    <th>Frequency(mins)</th>
+                    <th>Frequency (mins)</th>
                     <th>Next Arrival</th>
                     <th>Minutes Away</th>
                 </tr>
             </thead>
             <tbody id="trainTable">
-                <tr>
-                    <td>Train 1</td>
-                    <td>New York</td>
-                    <td>55</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>Train 2</td>
-                    <td>Philadelphia</td>
-                    <td>200</td>
-                    <td>-</td>
-                </tr>
             </tbody>
         </table>
     </div>
 
     <br><br>
     <!-- add a new train to schedule -->
-    <!-- The above form looks like this -->
+    <div id="container">
         <div class="row">
             <div class="six columns">
                 <label for="trainInput">Train Name</label>
-                <input class="u-full-width" type="text" placeholder="polar express" id="trainInput">
+                <input class="u-full-width" type="text" placeholder="MTA" id="trainInput">
             </div>
             <div class="six columns">
                 <label for="destination">Destination</label>
-                <input class="u-full-width" type="text" placeholder="new york" id="destination">
+                <input class="u-full-width" type="text" placeholder="Philadelphia" id="destination">
             </div>
+        </div>
+        <div class="row">
             <div class="six columns">
                 <label for="trainTime">First Train Time (military)</label>
                 <input class="u-full-width" type="text" placeholder="21:00" id="trainTime">
@@ -74,7 +65,9 @@
                 <label for="frequency">Frequency (mins)</label>
                 <input class="u-full-width" type="text" placeholder="" id="frequency">
             </div>
-    <button id="submit" class="button-primary">Submit</button>
+            <button id="submit" class="button-primary">Submit</button>
+        </div>
+    </div>
 
 </body>
 
