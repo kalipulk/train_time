@@ -1,18 +1,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #90AFC5;
-    background: url(https://us.123rf.com/450wm/phochi1981/phochi19811709/phochi1981170900101/86635845-abstract-line-background-and-texture-railroad-tracks-pattern-vector-illustration.jpg?ver=6);
-    background-repeat: cover;
+    background: url(pipes/pipes.png);
 }
 
 #title {
     background-color: #75B1A9;
-    color: #fff;
     border-radius: 5px;
     border: solid 2px #D9B44A;
+    color: #fff;
     font-size: 46px;
+    font-family: 'Montserrat Subrayada', sans-serif;
     text-align: center;
-    font-family: 'Monoton', cursive;
     width: auto;
     margin: 10px;
     padding: 15px;
@@ -22,7 +20,7 @@ body {
     width: auto;
     margin: 10px;
     padding: 5px;
-    background-color: #fff;
+    background-color: #F1F1F2;
     border-radius: 5px;
     border: solid 2px #D9B44A;
 }
@@ -31,7 +29,7 @@ body {
     width: auto;
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #F1F1F2;
     border-radius: 5px;
     border: solid 2px #D9B44A;
 }
@@ -39,7 +37,6 @@ body {
 #submit {
     background-color: #ACD0C0;
     border: solid 2px #4F6457;
-
 }
 
 #submit:hover {
